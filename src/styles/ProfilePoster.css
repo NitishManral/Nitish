@@ -1,34 +1,40 @@
 .posterContainer{
-    width: 300px;
-    height: 400px;
+    height: 600px;
+    width: 600px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 10px;
 }
+
+
 .picContainer{
   position: relative;
-  z-index: 4;
-
-  height: 250px;
-  width: 200px;
-  overflow: hidden; /* Ensures no part of the image spills out */
-  animation: changeBorderRadiusParent 3s infinite alternate;
+  width: 400px;
+  height: 500px;
+  overflow: hidden; 
+  animation: changeBorderRadiusParent 10s infinite alternate;
 }
-
+@media only screen and (max-width: 780px) {
+  .posterContainer{
+    width: 100%;
+    height: 35%;
+  }
+  .picContainer{
+    width: 200px;
+    height: 250px;
+  }
+}
 .profilePic{
 
-    /* object-fit: contain; */
     z-index: 3;
-    object-fit: fill; /* This will ensure the image is scaled to be as large as possible without cropping or stretching */
+    object-fit: fill; 
   height: 100%;
   width: 100%;
   padding-bottom: 0; 
   position: absolute;
   bottom: 0;
-  filter: drop-shadow(20px 20px 10px rgba(2, 2, 2, 1)); /* Adds shadow around the image */
+  filter: drop-shadow(20px 20px 10px rgba(2, 2, 2, 1)); 
 
 }
 
@@ -37,11 +43,31 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: blue;
+  background-color: #36BA98;
   z-index: 1;
-  animation: changeBorderRadius 3s infinite alternate;
+  animation: changeBorderRadius 10s infinite alternate;
 }
 @keyframes changeBorderRadius {
+ 
+  from {
+    border-radius: 200% 100% 60% 60%;
+    height: 90%;
+  }
+  to {
+    height: 80%;
+    border-radius: 100% 200% 60% 60%;
+  }
+}
+@keyframes changeBorderRadiusParent {
+  from {
+    border-radius: 50% 50% 200% 100%;
+  }
+  to {
+    border-radius: 50% 50% 100% 200%;
+  }
+}
+
+/* @keyframes changeBorderRadius {
   from {
     border-radius: 300% 100% 50% 50%;
   }
@@ -56,4 +82,4 @@
   to {
     border-radius: 50% 50% 100% 300%;
   }
-}
+} */

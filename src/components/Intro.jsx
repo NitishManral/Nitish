@@ -17,7 +17,7 @@ const Intro = () => {
     return (
         <div className='intro'>
             <h1 className='name'>Hi, I'm <span>Nitish</span></h1>
-            <p className='prof'>
+            <div className='prof'>
                 I'm a 
                 <Typewriter
                     skipAddStyles
@@ -27,7 +27,7 @@ const Intro = () => {
                         loop: true,
                       }}
                 />
-            </p>
+            </div>
         </div>
     );
 };

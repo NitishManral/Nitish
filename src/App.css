@@ -1,40 +1,69 @@
+:root {
+  --animation-duration: 10s;
+  --animation-delay: 0s;
+}
+
 html,body{
-  height: 100%;
-  width: 100%;
+ min-height: 100vh;
+ min-width: 100vw;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  /* -ms-overflow-style: none;   */
 
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .con{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items:center;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+ 
+  height: 100%;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 780px) {
+  .con{
+    flex-direction: column;
+
+  }
 }
 .mainContainer {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  width:  100vw;
+  height: 100%;
   background-color: var(--body-background);
+  
 }
+
+
 
 .bubble {
   position: absolute;
   bottom: 0;
-  width: 20px;
-  height: 20px;
+  width: var(--bubble-size);
+  height: var(--bubble-size);
   background: transparent;
-  border: var(--body-color) 1px solid;
+  border:  1px solid;
   border-radius: 50%;
-  animation: float 5s ease-out infinite;
+  animation: float var(--animation-duration) ease-out infinite;
+  animation-delay: var(--animation-delay);
+  z-index: 1;
 }
 
 @keyframes float {
   0% {
-    transform: translateY(0);
+    top: 100%;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(-100vh);
+    top: 0;
+    opacity: 0;
   }
 }

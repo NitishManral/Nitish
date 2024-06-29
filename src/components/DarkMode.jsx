@@ -38,6 +38,7 @@ const DarkMode = () => {
         setLightMode();
     }
     const toggleTheme = (e) => {
+        console.log("theme change");
         if(e.target.checked)    setDarkMode();
         else setLightMode();
     }
