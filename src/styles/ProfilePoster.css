@@ -13,7 +13,8 @@
   width: 400px;
   height: 500px;
   overflow: hidden; 
-  animation: changeBorderRadiusParent 10s infinite alternate;
+  animation: changeBorderRadiusParent 7s infinite alternate;
+  animation-delay: 0s;
 }
 @media only screen and (max-width: 780px) {
   .posterContainer{
@@ -45,7 +46,8 @@
   bottom: 0;
   background-color: #36BA98;
   z-index: 1;
-  animation: changeBorderRadius 10s infinite alternate;
+  animation: changeBorderRadius 7s infinite alternate;
+  animation-delay: 0s;
 }
 @keyframes changeBorderRadius {
  

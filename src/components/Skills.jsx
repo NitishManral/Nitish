@@ -30,7 +30,7 @@ const Skills = () => {
 const TagList = () => {
    return (
     <div className="tag-list">
-    <div className="loop-slider"  style={{ "--duration": "15951ms", "--direction": "normal" }}>
+    <div className="loop-slider"  style={{ "--duration": "10000ms", "--direction": "normal" }}>
       <div className="inner">
       <div className="tag"><Html className='skill'/></div>
         <div className="tag"><Js className='skill'/></div>
