@@ -10,7 +10,7 @@ function App() {
   return (
    <>
 
-      {/* <Bubbles/> */}
+      <Bubbles/>
      <div className='mainContainer' >
     
       <Nav/>

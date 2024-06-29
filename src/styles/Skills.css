@@ -1,8 +1,8 @@
 .skills{
-    height: 500px;
+    height: auto;
     width: 100%;
-    background-color: var(--body-background );
-    z-index: 5;
+    background-color: transparent;
+    z-index: 1;
     position: relative;
     display: flex;
     align-items: center;
@@ -13,9 +13,6 @@
     height: 40px;
     width: 40px;
 }
-  
-
-
 .tag-list {
     /* width: 30rem; */
     /* max-width: 90vw; */

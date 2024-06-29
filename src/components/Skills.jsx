@@ -21,28 +21,8 @@ import '../styles/Skills.css';
 const Skills = () => {
     return (
         <div className='skills'>
-            {/* <div className='skillList'>
-                <Html className='skill'/>
-                <Js className='skill'/>
-                <Css className='skill'/>
-                <ReactLogo className='skill'/>
-                <Docker className='skill'/>
-                <Git className='skill'/>
-                <Github className='skill'/>
-                <MUI className='skill'/>
-                <MYSQL className='skill'/>  
-                <Node className='skill'/>
-                <Postgresql className='skill'/>
-                <Redux className='skill'/>
-                <Springboot className='skill'/>
-                <Typescript className='skill'/>
-                <Java className='skill'/>
-                <Mongodb className='skill'/>
-                <Tailwind className='skill'/>
-
-            </div> */}
+           
             <TagList/>
-            {/* <h3  className='skillTitle'>SKILLS</h3> */}
             
         </div>
     );
@@ -86,7 +66,6 @@ const TagList = () => {
         <div className="tag"><Java className='skill'/></div>
         <div className="tag"><Mongodb className='skill'/></div>
         <div className="tag"><Tailwind className='skill'/></div>
-        
       </div>
     </div>
     
