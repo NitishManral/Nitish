@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: 1s fadeInUp ease-in-out;
+
 }
 
 
@@ -15,6 +17,8 @@
   overflow: hidden; 
   animation: changeBorderRadiusParent 7s infinite alternate;
   animation-delay: 0s;
+  /* animation: fade-in 2s ease-in-out; */
+
 }
 @media only screen and (max-width: 780px) {
   .posterContainer{
@@ -49,6 +53,7 @@
   animation: changeBorderRadius 7s infinite alternate;
   animation-delay: 0s;
 }
+
 @keyframes changeBorderRadius {
  
   from {
@@ -69,19 +74,3 @@
   }
 }
 
-/* @keyframes changeBorderRadius {
-  from {
-    border-radius: 300% 100% 50% 50%;
-  }
-  to {
-    border-radius: 100% 300% 50% 50%;
-  }
-}
-@keyframes changeBorderRadiusParent {
-  from {
-    border-radius: 50% 50% 300% 100%;
-  }
-  to {
-    border-radius: 50% 50% 100% 300%;
-  }
-} */
