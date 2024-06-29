@@ -5,6 +5,9 @@
     align-items: center;
     z-index: 100;
     height: 50px;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
 .navTitle{
     height: 30px;
