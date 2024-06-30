@@ -14,6 +14,7 @@ const Bubbles = () => {
           id: id, 
           left: Math.random() * 100, 
           size: Math.random() * 10 + 5, 
+          bottom: 0,
           borderColor: colors[Math.floor(Math.random() * colors.length)],
         },
       ]);
@@ -36,7 +37,8 @@ const Bubbles = () => {
               left: `${bubble.left}%`, 
               borderColor: bubble.borderColor, 
               width: `${bubble.size}px`, 
-              height: `${bubble.size}px` 
+              height: `${bubble.size}px`,
+              bottom: `${bubble.bottom}%`,
             }}
           />
         ))}
